@@ -1,21 +1,23 @@
 // Question 1: Value Detective
 function describeValue(inputVal){
+    let result = "";
     if (inputVal) {
-        console.log(typeof(inputVal) + " | truthy");
+        result = typeof(inputVal) + " | truthy";
     }else{
-        console.log(typeof(inputVal) + "| falsy");
+        result = typeof(inputVal) + "| falsy";
     }
+    return result;
 }
-describeValue("hello");
-describeValue("");
-describeValue(25);
-describeValue(0);
-describeValue(true);
-describeValue(null);
-describeValue(undefined);
-describeValue("0");
-describeValue(NaN);
-describeValue(null);
+console.log(describeValue("hello"));
+console.log(describeValue(""));
+console.log(describeValue(25));
+console.log(describeValue(0));
+console.log(describeValue(true));
+console.log(describeValue(null));
+console.log(describeValue(undefined));
+console.log(describeValue("0"));
+console.log(describeValue(NaN));
+console.log(describeValue(null));
 
 // End Question 1: Value Detective
 
